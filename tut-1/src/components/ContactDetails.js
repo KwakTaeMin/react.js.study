@@ -10,7 +10,7 @@ export default class ContactDetails extends React.Component {
             </div>
         );
 
-        const blank = (<div>Not selected</div>);
+        const blank = (<div>Not selected!</div>);
 
         return (
           <div>
