@@ -94,8 +94,6 @@ export default class Contact extends React.Component {
                             contact={contact}
                             key={i}
                             onClick={ ()=> this.handleClick(i)}/>);
-
-
             });
         };
 
