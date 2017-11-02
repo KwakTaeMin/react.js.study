@@ -4,18 +4,18 @@ import ChatWindow from './ChatWindow';
 import InputMessage from './InputMessage';
 
 const propTypes = {
+    socket : PropTypes.object
 };
 const defaultProps = {
 };
 class Chat extends Component {
     constructor(props) {
-        super(props);        
+        super(props);
     }
     render() {
         return(
             <div>
-                <ChatWindow/>
-                <InputMessage/>
+                <ChatWindow socket={this.props.socket}/>
             </div>
 
         );

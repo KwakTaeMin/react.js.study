@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Comment } from 'semantic-ui-react';
+import avatar from './human_man.jpg';
 
 const propTypes = {
     avatar: PropTypes.string,
     author: PropTypes.string,
     date: PropTypes.string,
-    comment: PropTypes.string
+    comment: PropTypes.string,
+    type: PropTypes.string
 };
 const defaultProps = {
-    avatar: './human_man.jpg',
+    avatar: avatar,
     author: 'Anonymous',
     date : '1990-01-01',
     comment : 'HELLO WORLD!!!'
 };
+
 class ChatContent extends Component {
     constructor(props) {
         super(props);
